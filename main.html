@@ -2,14 +2,114 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Covid Statistics Table</title>
+    <style>
+        /* Basic styles for the table */
+        table {
+            width: 80%;
+            margin: 50px auto;
+            border-collapse: collapse;
+            font-family: Arial, sans-serif;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Table Header Styling */
+        th {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px;
+            text-align: left;
+            font-size: 16px;
+        }
+
+        /* Table Data Styling */
+        td {
+            background-color: #f2f2f2;
+            padding: 12px;
+            text-align: center;
+            font-size: 14px;
+            border: 1px solid #ddd;
+        }
+
+        /* Row hover effect */
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+
+        /* Style for the table body */
+        tbody tr:nth-child(odd) {
+            background-color: #f9f9f9;
+        }
+
+        /* Styling for the table border */
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+
+        /* Make the table responsive on smaller screens */
+        @media (max-width: 600px) {
+            table {
+                width: 100%;
+            }
+            th, td {
+                font-size: 12px;
+            }
+        }
+    </style>
 </head>
 <body>
-    <!-- add table here -->
 
-        
+    <h2 style="text-align: center;">Covid-19 Statistics</h2>
+    
+    <table>
+        <thead>
+            <tr>
+                <th>Country</th>
+                <th>Total Cases</th>
+                <th>Total Deaths</th>
+                <th>Total Recovered</th>
+                <th>Active Cases</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>USA</td>
+                <td>35,000,000</td>
+                <td>500,000</td>
+                <td>34,200,000</td>
+                <td>300,000</td>
+            </tr>
+            <tr>
+                <td>India</td>
+                <td>30,000,000</td>
+                <td>400,000</td>
+                <td>29,500,000</td>
+                <td>100,000</td>
+            </tr>
+            <tr>
+                <td>Brazil</td>
+                <td>25,000,000</td>
+                <td>350,000</td>
+                <td>24,000,000</td>
+                <td>650,000</td>
+            </tr>
+            <tr>
+                <td>Russia</td>
+                <td>22,000,000</td>
+                <td>400,000</td>
+                <td>21,000,000</td>
+                <td>600,000</td>
+            </tr>
+            <tr>
+                <td>France</td>
+                <td>20,000,000</td>
+                <td>250,000</td>
+                <td>19,500,000</td>
+                <td>250,000</td>
+            </tr>
+        </tbody>
+    </table>
+
 </body>
 </html>
